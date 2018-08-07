@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+FILE *fptr;
+char ch;
+clrscr();
+fptr=fopen("myfile1.txt",r);
+//opnes the myfiles.txt file
+if(fptr==NULL)
+{
+    puts("failed to open the file");
+}
+else
+puts("file opened successfully");
+fclose(fptr);
+
+}
